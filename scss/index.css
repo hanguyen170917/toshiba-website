@@ -22,6 +22,11 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 15px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 .header__logo {
   margin-left: 1rem;
@@ -368,7 +373,7 @@ body {
 
 .service-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .service-item__icon {
   display: block;
@@ -387,6 +392,9 @@ body {
 }
 .service-item__info__title span {
   color: #d70017;
+}
+.service-item__info__desc {
+  line-height: 28px;
 }
 @media (max-width: 600px) {
   .service-item__info {

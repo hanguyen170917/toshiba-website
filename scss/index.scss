@@ -19,6 +19,10 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 15px;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
   &__logo {
     margin-left: 1rem;
     display: inline-block;
@@ -360,7 +364,7 @@ body {
 }
 .service-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   &__icon {
     display: block;
     width: 5rem;
@@ -377,6 +381,9 @@ body {
       span {
         color: #d70017;
       }
+    }
+    &__desc {
+      line-height: 28px;
     }
   }
   @media (max-width: 600px) {

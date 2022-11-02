@@ -394,6 +394,7 @@ body {
   color: #d70017;
 }
 .service-item__info__desc {
+  text-align: justify;
   line-height: 28px;
 }
 @media (max-width: 600px) {
